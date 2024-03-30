@@ -1,0 +1,36 @@
+/* src/styles/Navbar.css */
+.navbar {
+    background-color: #007bff; /* Mavi arka plan rengi */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Gölge efekti */
+    font-size: 25px;
+
+  }
+ 
+  
+  /* Or just within your specific navbar */
+  .navbar .navbar-brand {
+    --bs-navbar-brand-font-size: 30px; /* Scoped override */
+  }
+  
+  .navbar-brand {
+    font-weight: bold; /* Marka ismi için kalın yazı tipi */
+    margin-left: 20px; /* Sol taraftan 20px margin */
+
+}
+.nav-item.nav-link {
+    margin-right: 20px; /* Sağ taraftan 20px margin */
+  }
+  .nav-link {
+    margin-left: 20px; /* Çıkış ikonu için sol boşluk */
+  }
+  
+  .nav-link:hover {
+    color: #ccc !important; /* Bağlantı üzerine gelindiğinde renk değişimi */
+  }
+  
+  .fa-sign-out-alt {
+  }
+/* Custom.css */
+.navbar.bg-primary, .navbar-dark.bg-primary {
+  background-color: #4a90e2 !important; /* Change red to any color you prefer */
+}

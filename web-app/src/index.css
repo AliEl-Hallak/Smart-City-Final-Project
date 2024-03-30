@@ -1,0 +1,414 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5 !important;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Ana konteyner stilini ayarla */
+/* Ana konteyner stilini ayarla */
+
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* İçeriği dikey olarak ortala */
+  align-items: center; /* İçeriği yatay olarak ortala */
+  padding: 30px;
+  background-color: #4a90e2; /* Beyaz arka plan rengi */
+  width: 30%; /* Sabit genişlik */
+  margin: 100px auto; /* Üstte ve altta 40px marj ile ekranın ortasına yerleştir */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 400px; /* Minimum yükseklik */
+}
+
+/* Responsive tasarım için medya sorgusu */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Ekran daha küçük olduğunda genişliği ayarla */
+    margin-top: 20px; /* Üstte biraz daha boşluk bırak */
+    margin-bottom: 20px; /* Altta biraz daha boşluk bırak */
+  }
+}
+
+
+/* Giriş elemanlarını stilize et */
+.input {
+  font-size: 14px;
+  height: 40px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #4a90e2;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box; /* Padding ve border genişliği dahil et */
+}
+
+/* Düğme stilini ayarla */
+.button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 20px;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Arka plan rengi geçişini yumuşat */
+}
+
+/* Düğme üzerine gelindiğinde arka plan rengini değiştir */
+.button:hover {
+  background-color: #357ABD;
+}
+
+/* Link metni stilini ayarla */
+.linkText {
+  color: #4a90e2;
+  margin-top: 15px;
+  cursor: pointer;
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  font-size: 14px;
+
+
+}
+
+/* Link metni üzerine gelindiğinde altını çiz */
+.linkText:hover {
+  text-decoration: none;
+    cursor: pointer;
+
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Viewport'un tamamını kaplar */
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+.app {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  height: 80vh; /* Set height to 100% of the viewport height */
+  margin: 20px; /* Remove any default margin */
+  overflow: hidden; /* Hide any content that overflows the div's box */
+}
+
+
+.content {
+  
+
+  margin:50px auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+}
+.lottiCop {
+max-height: 250px;
+margin-top: -50px;
+margin-bottom: 50px;
+
+}
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* HomeScreen.css */
+.horizontal-slider {
+  width: 300px;
+  height: 25px;
+}
+
+.thumb {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%; /* Yuvarlak kenarlar */
+}
+
+.track {
+  top: 0;
+  bottom: 0;
+  background: #ddd;
+  border-radius: 5px; /* Yuvarlak kenarlar */
+}
+
+
+
+
+
+
+
+
+/* App.css */
+.scroll-view {
+  overflow-y: auto;
+}
+
+.container {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.empty-slots-container, .slot-container {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.23);
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.slot {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px;
+  text-align: center;
+}
+
+.slot-occupied {
+  color: #EF5350;
+}
+
+.slot-empty {
+  color: #66BB6A;
+}
+
+.animation {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.parking-lot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slot-container {
+  width: calc(33.333% - 10px); /* Her bir slot-container için genişlik */
+  margin-bottom: 20px; /* Alt slot-container'lar arası boşluk */
+}
+
+
+.containery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.23);
+  width:85%;
+
+}
+
+.headery {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-bottom: 20px;
+  
+}
+
+ .footery {
+    flex-direction: column;
+
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-top: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px #31629e;
+
+}
+
+.dfpalyer {
+  flex-direction: row;
+
+display: flex;
+justify-content: space-around;
+width: 100%;
+border-radius: 12px;
+padding: 10px 20px;
+
+}
+.buttony {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.23);
+}
+
+
+.buttonbildirim {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.buttondf {
+  border: none;
+
+
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.23);
+}
+
+.gauges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.gauge{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px; /* Göstergeler ve ikonlar arasında boşluk */
+}
+
+.icons {
+  margin-bottom: 50px;
+  flex-direction: row;
+
+  display: flex; /* İkonları yan yana dizmek için */
+  justify-content: center;
+  align-items: center;
+}
+.react-switch{
+  margin: 0 20px ;
+}
+.orta {
+ 
+  flex-direction: column;
+
+  display: flex; /* İkonları yan yana dizmek için */
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 10px; /* İkonlar arasında boşluk */
+}
+
+p {
+  margin-top: 10px;
+}
+
+.circular-progressbar {
+  width: 150px;
+  height: 150px;
+}
+
+.SliderKapicontainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 20px 0; /* Göstergeler ve ikonlar arasında boşluk */
+}
+.SliderKapi{
+  padding:0 10px;
+  max-width: 80px;
+}
+
+
+.slider-container {
+  width: 100%;
+  max-width: 400px; /* Slider'ın maksimum genişliği */
+  margin: 10px auto; /* Merkezde konumlandır */
+  text-align: center;
+  
+}
+
+.slider {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3; /* Slider arka planı */
+  outline: none; /* Odaklandığında çerçeveyi kaldır */
+  opacity: 0.7; /* Şeffaflık */
+  -webkit-transition: .2s; /* Geçiş efekti */
+  transition: opacity .2s;
+  -webkit-appearance: none; /* Tarayıcı tarafından sağlanan varsayılan stilin üzerine yaz */
+}
+
+.slider:hover {
+  opacity: 1; /* Fare ile üzerine gelindiğinde şeffaflığı artır */
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 25px; /* Slider thumb genişliği */
+  height: 25px; /* Slider thumb yüksekliği */
+  border-radius: 50%; 
+  background: #4a90e2; /* Thumb arka plan rengi */
+  cursor: pointer; /* Fare imlecini değiştir */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Slider thumb genişliği */
+  height: 25px; /* Slider thumb yüksekliği */
+  border-radius: 50%;
+  background: #4a90e2; /* Thumb arka plan rengi */
+  cursor: pointer;
+}
